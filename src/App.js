@@ -127,9 +127,9 @@ export default function WeatherNow() {
   61: { label: "Rain", anim: rainyAnim },
   71: { label: "Snowfall", anim: snowyAnim },
   80: { label: "Rain Showers", anim: rainyAnim },
-  95: { label: "Thunderstorm", anim: thunderAnim },   // 👈 add this
-  96: { label: "Thunderstorm w/ Hail", anim: thunderAnim }, // 👈 add this
-  99: { label: "Thunderstorm w/ Heavy Hail", anim: thunderAnim }, // 👈 add this
+  95: { label: "Thunderstorm", anim: thunderAnim },
+  96: { label: "Thunderstorm w/ Hail", anim: thunderAnim }, 
+  99: { label: "Thunderstorm w/ Heavy Hail", anim: thunderAnim },
   };
 
 
