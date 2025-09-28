@@ -116,21 +116,21 @@ export default function WeatherNow() {
   }
 
   // WeatherCode → Animations
-  const weatherCodeMap = {
+const weatherCodeMap = {
   0: { label: "Clear", anim: sunnyAnim },
   1: { label: "Mainly Clear", anim: sunnyAnim },
   2: { label: "Partly Cloudy", anim: cloudyAnim },
   3: { label: "Overcast", anim: cloudyAnim },
   45: { label: "Fog", anim: cloudyAnim },
   48: { label: "Depositing Rime Fog", anim: cloudyAnim },
-  51: { label: "Light Drizzle", anim: rainyAnim },
-  61: { label: "Rain", anim: rainyAnim },
-  71: { label: "Snowfall", anim: snowyAnim },
-  80: { label: "Rain Showers", anim: rainyAnim },
+  51: { label: "Light Drizzle", anim: rainAnim },
+  61: { label: "Rain", anim: rainAnim },  
+  71: { label: "Snowfall", anim: snowAnim },
+  80: { label: "Rain Showers", anim: rainAnim },
   95: { label: "Thunderstorm", anim: thunderAnim },
-  96: { label: "Thunderstorm w/ Hail", anim: thunderAnim }, 
+  96: { label: "Thunderstorm w/ Hail", anim: thunderAnim },
   99: { label: "Thunderstorm w/ Heavy Hail", anim: thunderAnim },
-  };
+};
 
 
   // Background themes
