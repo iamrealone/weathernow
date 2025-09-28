@@ -3,9 +3,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 // Import your Lottie JSON files
 import sunnyAnim from "./assets/lotties/sunny.json";
-import rainAnim from "./assets/lotties/rainy.json";
+import rainyAnim from "./assets/lotties/rainy.json";
 import cloudyAnim from "./assets/lotties/cloudy.json";
-import snowAnim from "./assets/lotties/snowy.json";
+import snowyAnim from "./assets/lotties/snowy.json";
 import thunderAnim from "./assets/lotties/thunder.json";
 
 export default function WeatherNow() {
@@ -115,7 +115,6 @@ export default function WeatherNow() {
     fetchWeather(location.lat, location.lon);
   }
 
-  // WeatherCode → Animations
 const weatherCodeMap = {
   0: { label: "Clear", anim: sunnyAnim },
   1: { label: "Mainly Clear", anim: sunnyAnim },
@@ -123,14 +122,22 @@ const weatherCodeMap = {
   3: { label: "Overcast", anim: cloudyAnim },
   45: { label: "Fog", anim: cloudyAnim },
   48: { label: "Depositing Rime Fog", anim: cloudyAnim },
-  51: { label: "Light Drizzle", anim: rainAnim },
-  61: { label: "Rain", anim: rainAnim },  
-  71: { label: "Snowfall", anim: snowAnim },
-  80: { label: "Rain Showers", anim: rainAnim },
+  51: { label: "Light Drizzle", anim: rainyAnim },
+  53: { label: "Moderate Drizzle", anim: rainyAnim },
+  55: { label: "Dense Drizzle", anim: rainyAnim },
+  61: { label: "Rain", anim: rainyAnim },
+  63: { label: "Moderate Rain", anim: rainyAnim },
+  65: { label: "Heavy Rain", anim: rainyAnim },
+  71: { label: "Snowfall", anim: snowyAnim },
+  73: { label: "Moderate Snow", anim: snowyAnim },
+  75: { label: "Heavy Snow", anim: snowyAnim },
+  80: { label: "Rain Showers", anim: rainyAnim },
+  81: { label: "Heavy Showers", anim: rainyAnim },
   95: { label: "Thunderstorm", anim: thunderAnim },
   96: { label: "Thunderstorm w/ Hail", anim: thunderAnim },
   99: { label: "Thunderstorm w/ Heavy Hail", anim: thunderAnim },
 };
+
 
 
   // Background themes
